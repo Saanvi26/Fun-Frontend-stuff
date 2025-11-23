@@ -1,0 +1,81 @@
+.timer-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.timer-component h2 {
+    color: #f4ff61;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+.time-display-element {
+    color: #1a1a1a;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+.input-element{
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #1a1a1a;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-element::placeholder {
+    color: rgba(26, 26, 26, 0.6);
+}
+
+.input-element:focus {
+    outline: none;
+    border-color: rgba(144, 238, 144, 0.8);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(144, 238, 144, 0.3);
+}
+.button-element{
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.button-element:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(144, 238, 144, 0.4);
+    background: rgba(144, 238, 144, 0.3);
+    border-color: rgba(144, 238, 144, 0.9);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.button-element:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
