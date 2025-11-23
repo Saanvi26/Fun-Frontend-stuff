@@ -3,7 +3,6 @@ import "./Timer.css"
 function Timer() {
     const [time, setTime] = useState(0);
     const [start, setStart] = useState(false);
-    const [mins,setMins]=useState(0);
     function inputTimeValue(e) {
         const value = e.target.value;
         if (value === "" || isNaN(parseInt(value)) || parseInt(value) < 0) {
@@ -40,7 +39,7 @@ function Timer() {
             <div>
                 <input className='input-element' placeholder='Enter the Time in seconds' onChange={inputTimeValue} />
             </div>
-            <h3 className="time-display-element">{mins}:{time}</h3>
+            <h3 className="time-display-element">{time}</h3>
             <div>
                 <button className='button-element' onClick={handleStart}>
                     {start ? 'Pause' : "Let's Start"}
